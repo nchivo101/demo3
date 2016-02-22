@@ -4,8 +4,11 @@ html
         title Sample App
     body 
         h1 Hello Express
-        form(action="/" method="post")
-            input(name="name" placeholder="name") 
-            input(name="age" placeholder="age") 
-            button(type="submit") Submit
+        h3: a(href="/") HOME
+        h3: a(href="/about") ABOUT
+        block content
+            form(action="/" method="post")
+                input(name="name" placeholder="name") 
+                input(name="age" placeholder="age") 
+                button(type="submit") Submit
 

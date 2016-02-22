@@ -5,3 +5,7 @@ module.exports.create = function(req,res) {
     cor.save();
     res.redirect('/');
 }
+
+module.exports.find = Bird.find({}, function(err,results) {
+    if (err) throw err;
+});
